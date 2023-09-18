@@ -1,5 +1,8 @@
 #このプログラムが正しいコンター図をアウトプットするエレペディアのファイルです
 
+#ディレクトリ生成用
+import os
+#グラフ描写用
 import matplotlib.pyplot as plt
 #円周率の算出
 import math 
@@ -33,11 +36,19 @@ r_0=10
 
 #表皮効果描写プログラム
 
+#gjfを生成するための画像を保存する為のディレクトリを無い場合は新規に作成する
 
+
+ 
+SAMPLE_DIR = "./graphs"
+ 
+if not os.path.exists(SAMPLE_DIR):
+    # ディレクトリが存在しない場合、ディレクトリを作成する
+    os.makedirs(SAMPLE_DIR)
 
 
 def bixyousixya(i_2):
-    freq=i_2*0.1
+    freq=i_2*0.2
     omega = 2*math.pi*freq
     k= (-1j*omega*mu*sigma)**0.5
 
