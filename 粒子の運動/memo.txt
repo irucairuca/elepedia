@@ -1,0 +1,12 @@
+houbutusen
+電場Eによって荷電子は放物線上に運動する
+rasen
+磁場H（磁束密度B）によって荷電子は螺旋運動をする。
+
+kongou
+
+電磁場空間における荷電子は放物線運動と螺旋運動を組み合わせた
+複雑な運動をする。
+
+https://electricitypedia.jp/rasen/
+
