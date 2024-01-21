@@ -14,20 +14,22 @@ gridwidth=0.3
 X, Y= np.meshgrid(np.arange(-LX, LX, gridwidth), np.arange(-LY, LY,gridwidth)) 
 
 n=10
+#ソレノイドコイルの設計
 x=np.linspace(-2,+2,n)
-d=1.5
+d=1.5 #内径
 zp=np.zeros(n)
 zp2=np.zeros(n)
 for i in range(n):
-    zp[i]=x[i]    
+    zp[i]=x[i]
+    #下部
     plt.plot(x[i],0,'o',color='blue')
-
+    #上部
     plt.plot(x[i],d,'o',color='blue')
 
 
-
+#コイル電流
 I=1
-print()
+
 x=[]
 y=[]
 u=[]
